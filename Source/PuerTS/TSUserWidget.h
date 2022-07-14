@@ -11,7 +11,7 @@ class UTSWidgetPrivate;
  * BASE CLASS
  */
 UCLASS()
-class MYPROJECT_API UTSUserWidget : public UUserWidget
+class SPPROJECT_API UTSUserWidget : public UUserWidget
 {
 	GENERATED_BODY()
 

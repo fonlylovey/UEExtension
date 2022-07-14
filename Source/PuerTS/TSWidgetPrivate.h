@@ -5,7 +5,7 @@
 #include "TSWidgetPrivate.generated.h"
 
 UCLASS()
-class MYPROJECT_API UTSWidgetPrivate : public UObject, public FTickableGameObject
+class SPPROJECT_API UTSWidgetPrivate : public UObject
 {
 	GENERATED_BODY()
 
@@ -13,8 +13,9 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void Tick(float DeltaTime);
 
-	virtual TStatId GetStatId() const;
-
 	UFUNCTION(BlueprintImplementableEvent)
 	void SetupUI(UUserWidget* ui);
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void Destory();
 };
